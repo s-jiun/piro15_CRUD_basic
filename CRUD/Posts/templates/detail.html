@@ -14,5 +14,9 @@
         <p>{{ post.updated_at }}</p>
         <a href="{% url 'Posts:list' %}">리스트로 돌아가기</a> 
         <br />
+        <a href="{% url 'Posts:update' post.id %}">수정하기</a> 
+        <br />
+        <a href="{% url 'Posts:delete' post.id %}">삭제하기</a> 
+        <br />
     </body>
 </html>
